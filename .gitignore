@@ -1,0 +1,30 @@
+# Ignore everything
+/*
+
+# But not this .gitignore itself
+!.gitignore
+
+# Allow wp-content folder
+!wp-content/
+
+# Ignore everything inside wp-content
+wp-content/*
+
+# Allow only your frost-child theme
+!wp-content/themes/
+!wp-content/themes/frost-child/**
+
+# Allow only custom plugins that start with jonimms-
+!wp-content/plugins/
+!wp-content/plugins/jonimms-*/
+
+# Optional: exclude node_modules, cache, log files if present
+**/node_modules/
+**/vendor/
+*.log
+*.zip
+*.sql
+*.env
+.env.*
+.DS_Store
+Thumbs.db
