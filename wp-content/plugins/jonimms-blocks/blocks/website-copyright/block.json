@@ -1,0 +1,13 @@
+{
+  "apiVersion": 2,
+  "name": "jonimms-blocks/website-copyright",
+  "title": "Website Copyright",
+  "category": "jonimms-blocks",
+  "description": "Displays © Year – Site Name",
+  "icon": "admin-site-alt3",
+  "supports": {
+    "html": false
+  },
+  "editorScript": "jonimms-blocks-website-copyright",
+  "render": "file:./render.php"
+}
