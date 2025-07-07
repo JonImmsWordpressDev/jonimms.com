@@ -2,7 +2,8 @@
 /**
  * Render callback for the Website Copyright block.
  */
-function jonimms_render_website_copyright( $attributes, $content ) {
+function jonimms_render_website_copyright( $attributes, $content ): string
+{
     $year = date( 'Y' );
     $site_url = parse_url( home_url(), PHP_URL_HOST );
 

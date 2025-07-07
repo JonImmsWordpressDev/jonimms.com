@@ -1,0 +1,20 @@
+{
+  "apiVersion": 2,
+  "name": "jonimms-blocks/social-logos",
+  "title": "Social Logo Row",
+  "category": "jonimms-blocks",
+  "icon": "share",
+  "description": "A row of social logos linking to your profiles.",
+  "keywords": ["social", "logos", "links", "github", "upwork"],
+  "version": "1.0.0",
+  "textdomain": "jonimms-blocks",
+  "editorScript": "jonimms-blocks-social-logos",
+  "editorStyle": "file:./style.css",
+  "style": "file:./style.css",
+  "attributes": {
+    "github": { "type": "string", "default": "" },
+    "codepen": { "type": "string", "default": "" },
+    "linkedin": { "type": "string", "default": "" },
+    "upwork": { "type": "string", "default": "" }
+  }
+}

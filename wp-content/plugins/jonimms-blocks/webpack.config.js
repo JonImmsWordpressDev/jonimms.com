@@ -1,11 +1,12 @@
 const path = require('path');
 const glob = require('glob');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const blocks = glob.sync('./blocks/*/index.js');
 
 module.exports = {
     entry: blocks.reduce((entries, file) => {
-        const blockDir = path.basename(path.dirname(file)); // e.g., 'current-year'
+        const blockDir = path.basename(path.dirname(file));
         entries[blockDir] = path.resolve(__dirname, file);
         return entries;
     }, {}),
@@ -29,6 +30,19 @@ module.exports = {
                 use: 'babel-loader',
                 exclude: /node_modules/,
             },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader'
+                ],
+            },
         ],
     },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: '../blocks/[name]/style.css',
+        }),
+    ],
 };
