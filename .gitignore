@@ -1,12 +1,19 @@
 # Ignore everything at the root
 /*
 
-# But don't ignore this .gitignore file
+# But don't ignore this .gitignore itself
 !.gitignore
 
-# Allow wp-content folder and everything inside it
+# Allow wp-content folder and its structure
 !wp-content/
 !wp-content/**
+
+# Ignore uploads and upgrade
+wp-content/uploads/
+wp-content/uploads/**
+
+wp-content/upgrade/
+wp-content/upgrade/**
 
 # Ignore all themes
 wp-content/themes/*
@@ -22,7 +29,7 @@ wp-content/plugins/*
 !wp-content/plugins/jonimms-*/
 !wp-content/plugins/jonimms-*/**
 
-# Optional: Ignore common dev output
+# Optional: Ignore common generated or system files
 **/node_modules/
 **/vendor/
 **/dist/
