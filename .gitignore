@@ -1,26 +1,32 @@
-# Ignore everything
+# Ignore everything at the root
 /*
 
-# But not this .gitignore itself
+# But don't ignore this .gitignore file
 !.gitignore
 
-# Allow wp-content folder
+# Allow wp-content folder and everything inside it
 !wp-content/
+!wp-content/**
 
-# Ignore everything inside wp-content
-wp-content/*
+# Ignore all themes
+wp-content/themes/*
 
-# Allow only your frost-child theme
-!wp-content/themes/
+# Allow only frost-child theme
+!wp-content/themes/frost-child/
 !wp-content/themes/frost-child/**
 
-# Allow only custom plugins that start with jonimms-
-!wp-content/plugins/
-!wp-content/plugins/jonimms-*/
+# Ignore all plugins
+wp-content/plugins/*
 
-# Optional: exclude node_modules, cache, log files if present
+# Allow only jonimms-* plugins
+!wp-content/plugins/jonimms-*/
+!wp-content/plugins/jonimms-*/**
+
+# Optional: Ignore common dev output
 **/node_modules/
 **/vendor/
+**/dist/
+**/build/
 *.log
 *.zip
 *.sql
