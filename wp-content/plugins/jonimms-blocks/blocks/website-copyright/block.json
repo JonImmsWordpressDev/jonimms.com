@@ -5,9 +5,17 @@
   "category": "jonimms-blocks",
   "description": "Displays © Year – Site Name",
   "icon": "admin-site-alt3",
+  "attributes": {
+    "textColor": {
+      "type": "string",
+      "default": "white"
+    }
+  },
   "supports": {
     "html": false
   },
   "editorScript": "jonimms-blocks-website-copyright",
+  "editorStyle": "file:./style.css",
+  "style": "file:./style.css",
   "render": "file:./render.php"
 }

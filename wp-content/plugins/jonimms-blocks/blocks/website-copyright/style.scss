@@ -1,0 +1,13 @@
+.wp-block-jonimms-blocks-website-copyright {
+  text-align: center;
+  font-size: var(has-small-font-size);
+
+    &.text-white {
+      color: #fff;
+    }
+
+    &.text-black {
+      color: #000;
+    }
+
+}
