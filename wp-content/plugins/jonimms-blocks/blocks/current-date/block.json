@@ -1,0 +1,32 @@
+{
+  "apiVersion": 2,
+  "name": "jonimms-blocks/current-date",
+  "title": "Current Date",
+  "category": "jonimms-blocks",
+  "icon": "calendar",
+  "description": "A simple block that displays today’s date.",
+  "keywords": ["date", "today", "calendar", "current"],
+  "version": "1.0.0",
+  "textdomain": "jonimms-blocks",
+  "editorScript": "jonimms-blocks-current-date",
+  "editorStyle": "file:./style.css",
+  "style": "file:./style.css",
+  "attributes": {
+    "format": {
+      "type": "string",
+      "default": "F j, Y"
+    },
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "textColor": {
+      "type": "string",
+      "default": "black"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "render": "file:./render.php"
+}

@@ -1,0 +1,12 @@
+.wp-block-jonimms-blocks-current-date {
+  font-size: var(has-small-font-size);
+  text-align: center;
+
+  &.text-black {
+    color: #000;
+  }
+
+  &.text-white {
+    color: #fff;
+  }
+}
