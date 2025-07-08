@@ -13,8 +13,58 @@ License URI:    https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    frost-child
 */
 
+/* -- Header -- */
 header.wp-block-template-part {
     position: sticky;
     top: 0;
     z-index: 999;
 }
+
+/* -- Navigation -- */
+/* Nav links default + hover */
+.wp-block-navigation a {
+    transition: transform 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+}
+
+/* Hover grow effect */
+.wp-block-navigation a:hover {
+    transform: scale(1.1);
+}
+
+/* Active/current menu item */
+.wp-block-navigation__container .wp-block-navigation-item.current-menu-item > a,
+.wp-block-navigation__container .wp-block-navigation-item.current_page_item > a,
+.wp-block-navigation__container .wp-block-navigation-item.current-menu-ancestor > a {
+    color: #cd595c; /* or your preferred active color */
+    font-weight: 600;
+}
+
+.wp-block-navigation a.active {
+    color: #cd595c;
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+[id] {
+    scroll-margin-top: 160px; /* compensate for the sticky header height */
+}
+
+
+/* -- Footer -- */
+
+
+/* -- Custom Styles -- */
+.wp-block-button__link {
+    transition: transform 0.2s ease;
+}
+
+.wp-block-button__link:hover {
+    transform: scale(1.05);
+}
+
+.wp-block-button__link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
