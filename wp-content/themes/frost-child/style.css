@@ -54,6 +54,20 @@ header.wp-block-template-part {
 /* -- Footer -- */
 
 
+/* -- Content -- */
+#experience .wp-block-column {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease;
+}
+
+#experience .wp-block-column:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 /* -- Custom Styles -- */
 .wp-block-button__link {
     transition: transform 0.2s ease;
@@ -62,7 +76,6 @@ header.wp-block-template-part {
 .wp-block-button__link:hover {
     transform: scale(1.05);
 }
-
 .wp-block-button__link:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
