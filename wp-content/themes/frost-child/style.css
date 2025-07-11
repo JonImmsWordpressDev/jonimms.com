@@ -68,6 +68,14 @@ header.wp-block-template-part {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+/* Remove styles from empty columns */
+#experience .wp-block-column:empty {
+    border: none;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
 /* -- Custom Styles -- */
 .wp-block-button__link {
     transition: transform 0.2s ease;
